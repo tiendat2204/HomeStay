@@ -19,8 +19,7 @@ export function AnimatedTestimonialsDemo() {
       name: "Sân vườn",
       designation: "Không gian xanh ngoài trời",
       src: image2,
-    }
-,    
+    },
     {
       quote:
         "Khu vườn ngoài trời với bàn ghế và ánh đèn lung linh, là nơi lý tưởng để tổ chức các bữa tiệc BBQ cùng gia đình và bạn bè.",
@@ -31,9 +30,9 @@ export function AnimatedTestimonialsDemo() {
     },
     {
       quote:
-        "Khu vực bếp đầy đủ tiện nghi, cho phép bạn tự tay chuẩn bị các món ăn yêu thích giữa khung cảnh biển xanh mát.",
-      name: "Phòng bếp",
-      designation: "Tiện nghi và ấm cúng",
+        "Khu vực cà phê đầy đủ tiện nghi, nơi bạn có thể thưởng thức những tách cà phê thơm ngon giữa khung cảnh biển xanh mát.",
+      name: "Khu vực cà phê",
+      designation: "Thư giãn và ấm cúng",
       src: image4,
     },
   ];

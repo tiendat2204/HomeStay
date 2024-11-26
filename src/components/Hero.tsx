@@ -28,13 +28,20 @@ export const Hero = () => {
         </p>
 
         <div className="space-y-4 md:space-y-0 md:space-x-4">
-          <a href="https://www.facebook.com/tnss.phat" target="blank">
+          <a
+            href="https://www.instagram.com/nhabenbien_homestay/profilecard/?igsh=M2Q4MDJmMTBhNWYx"
+            target="blank"
+          >
             <Button className="w-full md:w-1/3">Đặt phòng ngay</Button>
           </a>
-
-          <Button variant="outline" className="w-full md:w-1/3">
-            Xem thêm
-          </Button>
+          <a
+            href="https://www.instagram.com/nhabenbien_homestay/profilecard/?igsh=M2Q4MDJmMTBhNWYx"
+            target="blank"
+          >
+            <Button variant="outline" className="w-full md:w-1/3">
+              Xem thêm
+            </Button>
+          </a>
         </div>
       </div>
 
