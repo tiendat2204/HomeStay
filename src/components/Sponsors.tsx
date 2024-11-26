@@ -1,58 +1,41 @@
-import { Radar } from "lucide-react";
+import { AnimatedTestimonials } from "@/components/ui/animated-testimonials";
+import image1 from "@/assets/z6072270798164_dcdad2f25e2ead39e70c948186c72723.jpg";
+import image2 from "@/assets/z6072270769402_48f42c8a92c8500e4db333ec0f8c8f9e.jpg";
+import image3 from "@/assets/z6072270780513_a10097509891d99bfcd85f7b3326aac6.jpg";
+import image4 from "@/assets/z6072270786138_c4a5b9f29bcb9472a5d2e97ba375820f.jpg";
 
-interface SponsorProps {
-  icon: JSX.Element;
-  name: string;
+export function AnimatedTestimonialsDemo() {
+  const testimonials = [
+    {
+      quote:
+        "Phòng ngủ được trang bị giường êm ái, ánh sáng tự nhiên và màu sắc nhẹ nhàng, giúp bạn có giấc ngủ sâu sau ngày dài khám phá.",
+      name: "Phòng ngủ",
+      designation: "Không gian nghỉ ngơi lý tưởng",
+      src: image1,
+    },
+    {
+      quote:
+        "Sân vườn rộng rãi được thiết kế với cây xanh và lối đi lát đá, mang lại không gian thư thái, lý tưởng để tận hưởng không khí trong lành của biển.",
+      name: "Sân vườn",
+      designation: "Không gian xanh ngoài trời",
+      src: image2,
+    }
+,    
+    {
+      quote:
+        "Khu vườn ngoài trời với bàn ghế và ánh đèn lung linh, là nơi lý tưởng để tổ chức các bữa tiệc BBQ cùng gia đình và bạn bè.",
+      name: "Khu vườn ngoài trời",
+      designation: "Không gian thư giãn ngoài trời",
+
+      src: image3,
+    },
+    {
+      quote:
+        "Khu vực bếp đầy đủ tiện nghi, cho phép bạn tự tay chuẩn bị các món ăn yêu thích giữa khung cảnh biển xanh mát.",
+      name: "Phòng bếp",
+      designation: "Tiện nghi và ấm cúng",
+      src: image4,
+    },
+  ];
+  return <AnimatedTestimonials testimonials={testimonials} />;
 }
-
-const sponsors: SponsorProps[] = [
-  {
-    icon: <Radar size={34} />,
-    name: "Sponsor 1",
-  },
-  {
-    icon: <Radar size={34} />,
-    name: "Sponsor 2",
-  },
-  {
-    icon: <Radar size={34} />,
-    name: "Sponsor 3",
-  },
-  {
-    icon: <Radar size={34} />,
-    name: "Sponsor 4",
-  },
-  {
-    icon: <Radar size={34} />,
-    name: "Sponsor 5",
-  },
-  {
-    icon: <Radar size={34} />,
-    name: "Sponsor 6",
-  },
-];
-
-export const Sponsors = () => {
-  return (
-    <section
-      id="sponsors"
-      className="container pt-24 sm:py-32"
-    >
-      <h2 className="text-center text-md lg:text-xl font-bold mb-8 text-primary">
-        Investors and founders
-      </h2>
-
-      <div className="flex flex-wrap justify-center items-center gap-4 md:gap-8">
-        {sponsors.map(({ icon, name }: SponsorProps) => (
-          <div
-            key={name}
-            className="flex items-center gap-1 text-muted-foreground/60"
-          >
-            <span>{icon}</span>
-            <h3 className="text-xl  font-bold">{name}</h3>
-          </div>
-        ))}
-      </div>
-    </section>
-  );
-};
